@@ -164,7 +164,7 @@ img {
 
   width: 100%;
   height: 4px;
-  border-radius: 2px; 
+  border-radius: 2px;
   background-color: var(--accent-txt-cl);
 }
 
@@ -215,7 +215,6 @@ img {
   border: none;
   transition: background-color var(--anim-hover);
 }
-
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -293,7 +292,6 @@ img {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  
 }
 
 .container-activity {
@@ -304,7 +302,7 @@ img {
 }
 
 .act-thumb {
-position: relative;
+  position: relative;
 }
 
 .act-img-bloc {
@@ -314,8 +312,7 @@ position: relative;
 
   width: 100%;
   height: 70px;
-  background:rgba(47, 48, 58, 0.8);
-  
+  background: rgba(47, 48, 58, 0.8);
 
   display: flex;
   align-items: center;
@@ -330,17 +327,7 @@ position: relative;
   letter-spacing: 0.03em;
 }
 
-
-
-
-
-
-
-
-
-
 .act-img-title {
-
 }
 
 /**
@@ -544,6 +531,80 @@ position: relative;
   fill: currentColor;
 }
 
+.ft-email-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--other-txt-cl);
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+
+.email-form-ft {
+  margin-left: auto;
+}
+
+.ft-email {
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  outline: transparent;
+  
+
+  transition: border-color var(--anim-hover);
+}
+
+.ft-email:focus,
+.ft-email:not(:placeholder-shown) {
+  border-color: var(--accent-txt-cl);
+}
+
+.ft-email::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ft-btn-send {
+  position: relative;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--other-txt-cl);
+  background-color: var(--accent-txt-cl);
+  margin-left: 12px;
+  
+
+  border-radius: 4px;
+  padding: 10px 62px 10px 28px;
+  border: none;
+  transition: background-color var(--anim-hover);
+
+  cursor: pointer;
+}
+
+.ft-btn-send:hover,
+.ft-btn-send:focus {
+  background-color: #188ce8;
+}
+
+.ft-send-icon {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
+  margin-left: 10px;
+  fill: var(--other-txt-cl);
+}
+
 /*
     |============================
     |Modal window
@@ -559,8 +620,8 @@ position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  opacity: 1; 
-  transition: opacity var(--anim-hover); 
+  opacity: 1;
+  transition: opacity var(--anim-hover);
 }
 
 .beckdrop.is-hidden {
@@ -568,15 +629,13 @@ position: relative;
   pointer-events: none;
   visibility: hidden;
   opacity: 40%;
- 
-  
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  
+
   width: 528px;
   height: 581px;
   background: var(--other-txt-cl);
@@ -584,11 +643,9 @@ position: relative;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1); 
+  transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim-hover);
   padding-bottom: 40px;
-
-  
 }
 
 .modal-btn {
@@ -614,7 +671,6 @@ position: relative;
 .modal-btn:hover,
 .modal-btn:focus {
   fill: var(--accent-txt-cl);
-
 }
 
 .register-form-title {
@@ -625,7 +681,6 @@ position: relative;
   line-height: calc(23 / 20);
   letter-spacing: 0.03em;
   margin-top: 40px;
-  
 }
 
 .register-form-group {
@@ -641,7 +696,6 @@ position: relative;
 }
 
 .register-form-input {
-
   width: 100%;
   height: 40px;
   padding-left: 48px;
@@ -660,7 +714,7 @@ position: relative;
 
 .register-form-input::placeholder {
   opacity: 0;
-  transition: opacity var(--anim-fast);
+  transition: opacity var(--anim-hover);
 }
 
 .register-form-input:focus::placeholder {
@@ -678,19 +732,17 @@ position: relative;
   margin-bottom: 4px;
 }
 
-
 .register-form-icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
-  
 
   transition: fill var(--anim-hover);
 }
 
 .register-form-input:focus ~ .register-form-icon {
   fill: var(--accent-txt-cl);
- }
+}
 
 .register-form-message {
   display: block;
@@ -724,13 +776,12 @@ position: relative;
   margin-bottom: 20px;
 }
 
-
 .register-form-agreement {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8.38px;
-  
+
   margin-bottom: 30px;
 }
 
@@ -753,8 +804,6 @@ position: relative;
 
 .register-form-checkbox:focus + .register-form-icons {
   outline-offset: 1px;
- 
-  
 }
 
 .register-form-desc {
@@ -780,35 +829,28 @@ position: relative;
   clip: rect(0 0 0 0);
 }
 
-
 .register-form-btn {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
-    color: var(--other-txt-cl);
-    background-color: var(--accent-txt-cl);
-    
-    border-radius: 4px;
-    padding: 10px 52px;
-    border: none;
-    transition: background-color var(--anim-hover);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--other-txt-cl);
+  background-color: var(--accent-txt-cl);
 
-    cursor: pointer;
- 
+  border-radius: 4px;
+  padding: 10px 52px;
+  border: none;
+  transition: background-color var(--anim-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  
+  cursor: pointer;
 }
 
 .register-form-btn:hover,
 .register-form-btn:focus {
   background-color: #188ce8;
-  
 }
-
-
-
 
 /*
     |*********************************************************
@@ -852,8 +894,7 @@ position: relative;
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
-  transition: background-color var(--anim-hover), 
-  box-shadow var(--anim-hover);
+  transition: background-color var(--anim-hover), box-shadow var(--anim-hover);
   color: var(--anim-hover);
 
   cursor: pointer;
