@@ -233,10 +233,13 @@ img {
 .container-about {
   display: flex;
   gap: 30px;
+  
+  
+  
 }
 
 .about-item {
-  flex-basis: ((100%-90px) / 4);
+  flex-basis: calc((100%-90px) / 4);
 }
 
 .about-block {
@@ -807,7 +810,7 @@ img {
 }
 
 .register-form-desc {
-  line-height: (24 / 14);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
   user-select: none;
@@ -918,25 +921,12 @@ img {
   color: var(--accent-txt-cl);
 }
 
-*/
+
 /*
     |============================
     |Projects
     |============================
   */
-
-.projects-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .container-project {
   display: flex;
