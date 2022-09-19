@@ -472,7 +472,8 @@ img {
 
 .footer-info {
   display: flex;
-  gap: 70px;
+  justify-content:space-between;
+  align-items: baseline;
 }
 
 .footer,
@@ -503,7 +504,7 @@ img {
   text-transform: uppercase;
   color: var(--other-txt-cl);
   margin-bottom: 20px;
-  padding-top: 12px;
+  
 }
 
 .ft-social-list {
@@ -542,11 +543,13 @@ img {
   text-transform: uppercase;
   color: var(--other-txt-cl);
   margin-bottom: 20px;
-  padding-top: 12px;
+  
 }
 
 .email-form-ft {
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ft-email {
@@ -558,11 +561,13 @@ img {
   border-radius: 4px;
   padding-left: 16px;
   outline: transparent;
+  color: var(--light-txt-cl);
   
 
   transition: border-color var(--anim-hover);
 }
 
+.ft-email:hover,
 .ft-email:focus,
 .ft-email:not(:placeholder-shown) {
   border-color: var(--accent-txt-cl);
@@ -576,7 +581,11 @@ img {
 }
 
 .ft-btn-send {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -588,7 +597,6 @@ img {
   
 
   border-radius: 4px;
-  padding: 10px 62px 10px 28px;
   border: none;
   transition: background-color var(--anim-hover);
 
@@ -601,7 +609,6 @@ img {
 }
 
 .ft-send-icon {
-  position: absolute;
   right: 28px;
   bottom: 13px;
   margin-left: 10px;
@@ -640,7 +647,6 @@ img {
   left: 50%;
 
   width: 528px;
-  height: 581px;
   background: var(--other-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -648,7 +654,7 @@ img {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim-hover);
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 .modal-btn {
@@ -683,19 +689,15 @@ img {
   font-size: 20px;
   line-height: calc(23 / 20);
   letter-spacing: 0.03em;
-  margin-top: 40px;
-}
+  margin-bottom: 12px;
 
-.register-form-group {
-  margin-top: 12px;
+  
 }
 
 .register-form-field {
   position: relative;
   display: block;
   margin-bottom: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .register-form-input {
@@ -710,6 +712,7 @@ img {
   transition: border-color var(--anim-hover);
 }
 
+.register-form-input:hover,
 .register-form-input:focus,
 .register-form-input:not(:placeholder-shown) {
   border-color: var(--accent-txt-cl);
@@ -743,7 +746,7 @@ img {
   transition: fill var(--anim-hover);
 }
 
-.register-form-input:focus ~ .register-form-icon {
+.register-form-input:focus, .register-form-input:hover ~ .register-form-icon {
   fill: var(--accent-txt-cl);
 }
 
@@ -770,6 +773,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.register-form-message:hover,
 .register-form-message:focus,
 .register-form-message:not(:placeholder-shown) {
   border-color: var(--accent-txt-cl);
