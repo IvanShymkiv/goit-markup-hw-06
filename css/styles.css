@@ -561,7 +561,10 @@ img {
   border-radius: 4px;
   padding-left: 16px;
   outline: transparent;
-  color: var(--light-txt-cl);
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
   
 
   transition: border-color var(--anim-hover);
